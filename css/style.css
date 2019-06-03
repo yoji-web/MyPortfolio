@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+.offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+h3.heading {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+  color: #e1c285;
+}
+
+/* Navigation */
+.navbar {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.5)!important;
+}
+.navbar-brand img {
+  height: 1.5rem;
+}
+.navbar-nav li {
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+/* スクロールスパイで現在いる項目、ホバーした時の色変化 */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #e1c285;
+}
+
+/* Landing Page */
+.home-inner {
+  background-image: url(../img/hero-img.png);
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 15%;
+  z-index: 1;
+  color: white;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+/* Aboutme Section */
+#aboutme img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #e1c285;
+}
+.myself {
+  text-align: left;
+  margin: auto 0;
+}
+.myself p {
+  font-size: .8rem;
+  margin-bottom: .3rem !important;
+}
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+  font-size: 2.4rem;
+}
+
+/* Skill section */
+.feature {
+    font-size: 1rem;
+  }
+.circle1 {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #c99065;
+  margin-right: 8px;
+}
+.circle2 {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #e5eaee;
+  margin-right: 8px;
+}
+span::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 2px;
+}
+#skill .col-lg-3 {
+  margin-bottom: 3rem;
+}
+
+/* Work Section */
+
+/* Contact Section */
+footer {
+  background-color: #e9ecef;
+  color: #c99065;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
+}
+footer a {
+  color: #c99065;
+}
+footer .sns {
+  font-size: 3rem;
+  margin: 1.2rem 2rem 0;
+}
+footer .sns:hover {
+  color: #c25f12!important;
+}
+hr.socket {
+  width: 100%;
+  border-top: 1px solid #666b71;
+  margin-top: 3rem;
+}
+
+/*============ Media Queries */
+
+@media (max-width: 992px) {
+  .caption h1 {
+    font-size: 3rem;
+  }
+  .caption h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1.2rem;
+  }
+  #skill .col-lg-3 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .myself {
+    text-align: left;
+    margin: auto 0;
+  }
+  .myself p {
+    font-size: .7rem;
+    margin-bottom: .2rem !important;
+  }
+  .caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+  footer .sns {
+    font-size: 2.5rem;
+    margin: 1.2rem 2rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .round-img {
+    padding-bottom: 15px;
+  }
+  #aboutme img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #e1c285;
+  }
+  .narrow {
+    width: 50%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+  }
+}
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
