@@ -88,6 +88,7 @@ h3.heading {
 .myself p {
   font-size: .8rem;
   margin-bottom: .3rem !important;
+  text-align: justify;
 }
 .narrow {
   width: 75%;
@@ -134,26 +135,52 @@ span::after {
 /* Work Section */
 
 /* Contact Section */
-footer {
+.contact-space {
   background-color: #e9ecef;
   color: #c99065;
   padding: 2rem 0 2rem;
   margin-top: 1rem;
 }
-footer a {
+.contact-space a {
   color: #c99065;
 }
-footer .sns {
+.contact-space .sns {
   font-size: 3rem;
   margin: 1.2rem 2rem 0;
 }
-footer .sns:hover {
+.contact-space .sns:hover {
   color: #c25f12!important;
 }
+#formWrapper .btn-contact {
+  color: #fff;
+  background-color: #c99065;
+  border: 1px solid #c99065;
+  padding: .3rem 1.5rem;
+  font-size: .8rem;
+}
+#formWrapper .btn-contact:hover {
+  background-color: #c25f12;
+  border: 1px solid #c25f12;
+}
+label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+}
+.form-group .wide {
+  width: 100%;
+  border: 1px solid #c25f12;
+}
+.form-row .col {
+  text-align: right;
+}
+
+
+/* Footer */
 hr.socket {
   width: 100%;
   border-top: 1px solid #666b71;
-  margin-top: 3rem;
+  margin-top: 0;
 }
 
 /*============ Media Queries */
